@@ -1,0 +1,108 @@
+body
+{
+  background: #EAEAEA;
+  font: 12px Verdana;
+  letter-spacing: 1px;
+}
+
+.navi
+{
+  margin: 15% auto;
+  width: 500px;
+  overflow: hidden;
+}
+
+.categories
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.categories li
+{
+  background: #6699ff;
+  float: left;
+  height: 60px;
+  min-width: 118px;
+  text-transform: uppercase;
+  text-align: center;
+  border-left: 1px solid #00ccff;
+  border-right: 1px solid #00ccff;
+}
+
+.categories li:first-child
+{
+  border-left: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.categories li:last-child
+{
+  border-right: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.categories li a
+{
+  color: #ffffff;
+  display: block;
+  line-height: 60px;
+  position: relative;
+  text-decoration: none;	
+}
+
+.categories ul 
+{
+  display: none;
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  overflow: hidden;
+  min-width: 160px;
+  border-radius: none;
+}
+
+.categories ul li 
+{
+  float: none;
+}
+
+.categories li:hover > ul 
+{
+  display: block;
+  background: #00ccff;  
+  -webkit-box-shadow:  0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+  box-shadow:  0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+
+.categories li:hover > ul li
+{
+  height: 40px;
+  text-align: center;
+  border-radius: none;
+}
+
+.categories li:hover > ul li a
+{
+  line-height: 40px;
+}
+
+.categories li:hover > ul:last-child
+{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.categories li:hover
+{
+  background: #00ccff;
+}
+
+.categories li:first-child:hover
+{
+  border-bottom-left-radius: 0;
+}
